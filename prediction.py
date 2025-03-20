@@ -5,7 +5,7 @@ from sklearn.preprocessing import StandardScaler, OrdinalEncoder  # Import neces
 from statsmodels.tsa.arima.model import ARIMA 
 
 class CrimeAnalysis:
-    def __init__(self, crime_data_path="data set/Crime_Prediction.csv", conviction_data_path="data set/Conviction_Rate.csv",
+    def __init__(self, crime_data_path="DATASET/Crime_Prediction.csv", conviction_data_path="DATASET/Conviction_Rate.csv",
                  model_path="crime_model.pkl", scaler_path="scaler.pkl", encoder_path="encoder.pkl"):
         self.crime_data_path = crime_data_path
         self.conviction_data_path = conviction_data_path
