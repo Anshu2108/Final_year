@@ -4,15 +4,15 @@ import os
 # Add the project root directory to the Python path
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
-from backend.prediction import CrimeAnalysis
-import backend.training_crime_prediction
-from frontend.app import launch_gradio_app
+from prediction import CrimeAnalysis
+import training_crime_prediction
+from app import launch_gradio_app
 
 def main():
     # Initialize the analyzer with updated file paths
     analyzer = CrimeAnalysis(
-        crime_data_path="data set/Crime_Prediction.csv",
-        conviction_data_path="data set/Conviction_Rate.csv"
+        crime_data_path="DATASET/Crime_Prediction.csv",
+        conviction_data_path="DATASET/Conviction_Rate.csv"
     )
 
     # Load and preprocess data
