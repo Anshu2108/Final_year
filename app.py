@@ -13,8 +13,8 @@ from geopy.geocoders import Nominatim
 from prediction import CrimeAnalysis  # Updated import path
 
 # Load the CSV data ONCE at startup
-crime_data = pd.read_csv("data set/Crime_Prediction.csv")
-odisha_data = pd.read_csv("data set/Odisha_Crime_Data.csv")
+crime_data = pd.read_csv("DATASET/Crime_Prediction.csv")
+odisha_data = pd.read_csv("DATASET/Odisha_Crime_Data.csv")
 
 # Handle missing 'Number_of_Cases' column
 if 'Number_of_Cases' not in odisha_data.columns:
